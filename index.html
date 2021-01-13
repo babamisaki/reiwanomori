@@ -29,7 +29,7 @@
 
   <main>
     <!-- MainVisual -->
-    <section class="mainvisual">
+    <section id="mainvisual">
       <div class="bg-slider">
         <div class="catchcopy">
           <p>
@@ -52,32 +52,41 @@
     </section>
 
     <!-- 墓地選択 -->
-    <section class="select-cemetery">
+    <section id="select-cemetery">
       <a href="" class="cemetery tree">
-        <h1>樹木墓地</h1>
-        <p>樹木墓地とは、<br>墓石の代わりに樹木を<br>シンボルとするお墓です。</p>
+        <div>
+          <h1>樹木墓地</h1>
+          <p>樹木墓地とは、<br>墓石の代わりに樹木を<br>シンボルとするお墓です。</p>
+          <span>詳細はこちら&nbsp;▶</span>
+        </div>
       </a>
       <a href="" class="cemetery indoor">
-        <h1>屋内墓地</h1>
-        <p>屋内施設のため、<br>天候を気にせず365日、<br>お好きな時にお参りができます。</p>
+        <div>
+          <h1>屋内墓地</h1>
+          <p>屋内施設のため、<br>天候を気にせず365日、<br>お好きな時にお参りができます。</p>
+          <span>詳細はこちら&nbsp;▶</span>
+        </div>
       </a>
       <a href="" class="cemetery ossuary">
-        <h1>納骨簿</h1>
-        <p>残された方のご負担が少ない<br>永代供養墓です。<br>年間管理費はいただきません。</p>
+        <div>
+          <h1>納骨簿</h1>
+          <p>残された方のご負担が少ない<br>永代供養墓です。<br>年間管理費はいただきません。</p>
+          <span>詳細はこちら&nbsp;▶</span>
+        </div>
       </a>
     </section>
 
     <!-- 特集・おすすめ情報 -->
-    <section class="recommend">
+    <section id="recommend">
       <h1>特集・おすすめ情報</h1>
       <h2>横浜みなとみらいを一望できる開放感にあふれた「樹木墓地&nbsp;令和の杜」</h2>
       <article>
         <img src="img/article-yokohama.jpg" width="400" height="300" alt="横浜令和の杜">
         <div>
           <p>京浜急行「南太田駅」徒歩約５分。山門を入り緑豊かな木々の中の階段を一段一段上っていくと静けさと歴史を感じられる本堂が目の前にあらわれます。豊かな自然と優しい陽射しに包まれて眠りたい。そんな願いをかなえてくれるお墓です。最寄りの駅から徒歩5分と交通の便もよく、駐車場も完備されていますのでお気軽にお参りして頂くことができます。</p>
-          <span class="tag near">駅ちか</span>
-          <span class="tag tree">樹木葬</span>
-          <a href="">詳しく見る</a>
+          <a href="" class="tag near">駅ちか</a>
+          <a href="" class="tag tree">樹木葬</a>
+          <a href="" class="detail">詳しく見る</a>
         </div>
       </article>
       <h2>都心の寺院に、和とモダンが融合した新しい時代の室内墓が誕生しました。</h2>
@@ -85,16 +94,16 @@
         <img src="img/article-karohto.jpg" width="400" height="300" alt="迦楼塔 東京">
         <div>
           <p>伝統的でありながらスタイリッシュさを兼ね備えたデザインは、厳かな本堂の空間に美しく映え、お参りする人を優しく迎え入れてくれます。現代のスタイルに融和した新しい供養のかたちです。最寄りの駅から徒歩約3分と便利な立地です。室内なので天候を気にせずお参りしていただくことができます。</p>
-          <span class="tag near">駅ちか</span>
-          <span class="tag indoor">屋内墓地</span>
-          <a href="">詳しく見る</a>
+          <a href="" class="tag near">駅ちか</a>
+          <a href="" class="tag indoor">屋内墓地</a>
+          <a href="" class="detail">詳しく見る</a>
         </div>
       </article>
       <a href="">過去の特集を見る</a>
     </section>
 
     <!-- お墓を選ぶにあたって -->
-    <section class="choose">
+    <section id="choose">
       <h1>お墓を選ぶにあたって</h1>
       <article>
         <img src="img/choose-point.gif" width="400" height="400" alt="ポイントで選ぶ">
@@ -107,20 +116,20 @@
             <li>園内の設備・施設・管理状況</li>
             <li>費用・価格</li>
           </ol>
-          <a href="">詳しく見る</a>
+          <a href="" class="detail">詳しく見る</a>
         </div>
       </article>
       <article>
         <img src="img/choose-diagnosis.gif" width="400" height="400" alt="適性で選ぶ">
         <div>
           <h2>「はい」「いいえ」の簡単な質問に答えるだけで<br>あなたに合ったお墓を診断いたします。</h2>
-          <a href="">無料診断スタート</a>
+          <a href="" class="diagnosis-start">無料診断スタート&nbsp;▶</a>
         </div>
       </article>
     </section>
 
     <!-- マップ -->
-    <section class="map">
+    <section id="map">
       <iframe>マップ</iframe>
       <ul>
         <li>横浜令和の杜<br>〒232-0006&nbsp;神奈川県横浜市南区南太田1丁目24-41&nbsp;横浜令和の杜</li>
@@ -133,46 +142,48 @@
     </section>
 
     <!-- 海洋散骨バナー -->
-    <section>
+    <section id="sea">
       <img src="img/banner-sea.jpg" width="1200" height="600">
     </section>
+
+    <!-- 下部墓地リンク -->
+    <section id="cemetery-slider">
+      <!-- Slider main container -->
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+  
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+  
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </section>
+
+    <!-- ページ最下部固定 -->
+    <section id="contact">
+      <div class="tel">
+        <img src="">
+        <a href="">0120-148324</a>
+      </div>
+      <div class="tour">
+        <a href="">見学予約</a>
+      </div>
+      <div class="document">
+        <a href="">資料請求</a>
+      </div>
+    </section>
   </main>
-
-  <!-- 下部墓地リンク -->
-  <!-- Slider main container -->
-  <div class="swiper-container">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        ...
-    </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
-  </div>
-
-  <!-- ページ最下部固定 -->
-  <section class="contact">
-    <div class="tel">
-      <img src="">
-      <a href="">0120-148324</a>
-    </div>
-    <div class="tour">
-      <a href="">見学予約</a>
-    </div>
-    <div class="document">
-      <a href="">資料請求</a>
-    </div>
-  </section>
 
   <footer>
     <ul>

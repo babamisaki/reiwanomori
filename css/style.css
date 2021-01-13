@@ -6,9 +6,15 @@ a{
   max-width:100vw;
   height:auto;
 }
+*:hover{
+  transition: all .3s;
+}
+h1{
+  clear: both;
+}
 /* ヘッダー */
 header{
-  background:rgb(250,250,250);
+  background-color:rgb(250,250,250);
   width:100vw;
   height:80px;
   display:flex;
@@ -35,17 +41,17 @@ header nav ul li{
 }
 
 /* メインビジュアル */
-section.mainvisual{
+section#mainvisual{
   width:100vw;
   height:800px;
   margin-top:80px;
   margin-bottom:80px;
 }
-section.mainvisual .catchcopy{
+section#mainvisual .catchcopy{
   width:400px;
   margin:150px auto 250px auto;
 }
-section.mainvisual .catchcopy p{
+section#mainvisual .catchcopy p{
   display: flex;
   width:100%;
   color:rgb(250,250,250);
@@ -53,12 +59,12 @@ section.mainvisual .catchcopy p{
   font-size:32px;
   filter: drop-shadow(0 0 4px rgb(150,16,16));
 }
-section.mainvisual .catchcopy h1{
+section#mainvisual .catchcopy h1{
   height:360px;
-  background:rgba(5,5,5,.5);
+  background-color:rgba(5,5,5,.5);
   font-weight: normal;
 }
-section.mainvisual .catchcopy h1 p{
+section#mainvisual .catchcopy h1 p{
   justify-content:center;
   align-items: center;
   margin:0;
@@ -79,75 +85,217 @@ section.mainvisual .catchcopy h1 p{
 }
 
 /* 墓地選択 */
-section.select-cemetery{
+section#select-cemetery{
   display: flex;
   justify-content: space-between;
   max-width:1200px;
   height:600px;
-  margin:0 auto;
-  margin-bottom:80px;
+  margin:0 auto 80px auto;
 }
-section.select-cemetery .cemetery{
+section#select-cemetery .cemetery{
   width:calc((100% - 40px) / 3);
-  background:#777;
   border-radius: 16px;
+  background-size:auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+section#select-cemetery .cemetery:hover{
+  background-size:auto 110%;
+}
+section#select-cemetery .cemetery.tree{
+  background-image:url(../img/cemetery-tree.jpg);
+}
+section#select-cemetery .cemetery.indoor{
+  background-image:url(../img/cemetery-indoor.jpg);
+}
+section#select-cemetery .cemetery.ossuary{
+  background-image:url(../img/cemetery-ossuary.jpg);
+}
+section#select-cemetery .cemetery div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height:300px;
+  margin-top:300px;
+  border-radius:0 0 16px 16px;
+  background-color:rgb(5,5,5,.5);
+  text-align:center;
+  color:rgb(250,250,250);
+}
+section#select-cemetery .cemetery div h1,
+section#select-cemetery .cemetery div p{
+  margin:0;
+}
+section#select-cemetery .cemetery div h1{
+  margin-top:32px;
+  letter-spacing: 4px;
+}
+section#select-cemetery .cemetery div p{
+  line-height: 32px;
+  letter-spacing: 2px;;
+}
+section#select-cemetery .cemetery div span{
+  display: block;
+  width:90%;
+  line-height:32px;
+  margin:0 auto 32px auto;
+  border-radius: 40px;;
+  background-color:rgb(250,250,250);
+  color:rgb(5,5,5);
 }
 
 /* 特集・おすすめ情報 */
-section.recommend{
+section#recommend{
   width:90%;
   max-width:1200px;
   margin:0 auto;
   margin-bottom:80px;
 }
-section.recommend h1{
+section#recommend h1{
   border-left:solid 4px rgb(5,5,5);
   padding-left:16px;
 }
-section.recommend h2{
+section#recommend h2{
   margin:0;
   margin-top:40px;
 }
-section.recommend article{
+section#recommend article{
   display:flex;
   justify-content: space-between;
   padding:40px 0;
   border-bottom:solid 1px #ccc;
 }
-section.recommend article img,
-section.recommend article div{
+section#recommend article img,
+section#recommend article div{
   width:calc((100% - 40px) / 2);
   height:300px;
   object-fit: cover;
+  position: relative;
+}
+section#recommend article div p{
+  margin-bottom:40px;
+}
+section#recommend article .tag{
+  display: inline-block;
+  width:96px;
+  height:32px;
+  line-height:32px;
+  margin-right:8px;
+  border-radius: 50px;
+  text-align:center;
+  color:rgb(250,250,250);
+}
+section#recommend article .tag:hover{
+  width:92px;
+  height: 31px;
+  padding-top: 1px;
+  padding-left:4px;
+  letter-spacing: 4px;
+  font-size:17px;
+}
+section#recommend article .tag.near{
+  background-color:rgb(191,0,0);
+}
+section#recommend article .tag.tree{
+  background-color:rgb(18,78,6);
+}
+section#recommend article .tag.indoor{
+  background-color:rgb(98,55,11);
+}
+section#recommend article .detail{
+  padding: 0px 48px 8px 0;
+  background:url(../img/btn-bg-01.png) no-repeat 100% 100%;
+  color:rgb(112,112,112);
+  letter-spacing: 2px;
+  position:absolute;
+  right:0;
+  bottom:0;
+}
+section#recommend article .detail:hover{
+  letter-spacing: 8px;
+  filter: drop-shadow(0 0 3px rgba(5,5,5,.2));
+}
+section#recommend>a{
+  background-image:url(../img/btn-bg-02.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+  background-size:auto 80%;
+  margin:16px 0;
+  padding-right:32px;
+  color:rgb(0,38,111);
+  font-weight:bold;
+  font-size:120%;
+  float: right;
 }
 
 /* お墓を選ぶにあたって */
-section.choose{
+section#choose{
   width:90%;
   max-width:1200px;
   margin:0 auto;
   margin-bottom:80px;
 }
-section.choose h1{
+section#choose h1{
   border-left:solid 4px rgb(5,5,5);
   padding-left:16px;
 }
-section.choose h2{
+section#choose h2{
   margin:0;
 }
-section.choose article{
+section#choose article{
   display:flex;
   justify-content: space-between;
   padding:40px 0;
-  border-bottom:solid 1px #ccc;
+  border-bottom:solid 1px rgb(112,112,112);
 }
-section.choose article img{
-  width:250px;
-  height:250px;
+section#choose article img{
+  width:300px;
+  height:300px;
   object-fit: cover;
 }
-section.choose article div{
-  width:calc(100% - 250px - 40px);
+section#choose article div{
+  width:calc(100% - 300px);
+  position: relative;
+}
+section#choose article div h2{
+  text-align:center;
+}
+section#choose article div ol{
+  margin: 0 10% 76px 10%;
+}
+section#choose article div ol li{
+  margin-top:16px;
+  border-bottom:solid 1px rgb(112,112,112);
+}
+section#choose article .detail{
+  padding: 0px 48px 8px 0;
+  background:url(../img/btn-bg-01.png) no-repeat 100% 100%;
+  color:rgb(112,112,112);
+  letter-spacing: 2px;
+  position: absolute;
+  right:0;
+  bottom:0px;
+}
+section#choose article .detail:hover{
+  letter-spacing: 8px;
+  filter: drop-shadow(0 0 3px rgba(5,5,5,.2));
+}
+section#choose article .diagnosis-start{
+  display: block;
+  width:480px;
+  line-height:80px;
+  margin:0 auto;
+  font-weight:bold;
+  font-size:24px;
+  text-align: center;
+  background-color: rgb(255,143,31);
+  color:rgb(250,250,250);
+  border-radius: 40px;;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom:40px;
 }
 
 /* 下部墓地リンクスライド */
