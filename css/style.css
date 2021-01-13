@@ -12,6 +12,9 @@ a{
 h1{
   clear: both;
 }
+p{
+  text-align: justify;
+}
 /* ヘッダー */
 header{
   background-color:rgb(250,250,250);
@@ -38,6 +41,10 @@ header nav ul li{
   display: block;
   margin-right:56px;
   list-style: none;
+}
+
+main{
+  margin-bottom:80px;
 }
 
 /* メインビジュアル */
@@ -132,7 +139,8 @@ section#select-cemetery .cemetery div h1{
 }
 section#select-cemetery .cemetery div p{
   line-height: 32px;
-  letter-spacing: 2px;;
+  letter-spacing: 2px;
+  text-align:center;
 }
 section#select-cemetery .cemetery div span{
   display: block;
@@ -297,9 +305,167 @@ section#choose article .diagnosis-start{
   right: 0;
   bottom:40px;
 }
+section#choose article .diagnosis-start:hover{
+  letter-spacing: 8px;
+  filter: drop-shadow(0 0 3px rgba(5,5,5,.2));
+}
 
-/* 下部墓地リンクスライド */
-.swiper-container {
-  width: 600px;
-  height: 300px;
+/* マップ */
+section#map{
+  margin-bottom: 80px;
+}
+section#map iframe{
+  width:100vw;
+  height:800px;
+  border:none;
+}
+section#map ul{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width:90%;
+  max-width:1200px;
+  margin:0 auto;
+}
+section#map ul li{
+  width:calc((100% - 24px) / 2);
+  list-style: none;
+  font-size:14px;
+  color:rgb(77,77,77);
+}
+section#map ul li span{
+  display: block;
+  margin-top:16px;
+  font-size:18px;
+}
+
+/* 海洋散骨バナー */
+section#sea{
+  margin-bottom: 80px;
+}
+section#sea a{
+  display: block;
+  width:100vw;
+  height:300px;
+  padding:40px 0;
+  background-image:url(../img/banner-bg-sea.png);
+  background-size:100% auto;
+  background-position:center;
+  color:rgb(250,250,250);
+  text-align:center;
+  position: relative;
+}
+section#sea a:hover{
+  background-size:110% auto;
+}
+section#sea a h1{
+  margin:32px 0;
+  font-size:64px;
+  letter-spacing: 16px;
+  filter: drop-shadow(0 0 4px rgb(5,5,5));
+}
+section#sea a div{
+  width:320px;
+  line-height:40px;
+  margin:0 auto;
+  background-color:rgba(250,250,250,.7);
+  color:rgb(5,5,5);
+  border-radius:40px;
+}
+section#sea a p{
+  width:100vw;
+  margin:0;
+  padding:22px 0;
+  position: absolute;
+  bottom:0;
+  text-align:center;
+  letter-spacing: 4px;
+  background-color:rgba(12, 55, 108, 0.5);
+  font-size:24px;
+}
+
+/* 墓地一覧スライド */
+section#cemeterylist{
+  width: 100vw;
+  height: 280px;
+  margin-bottom:80px;
+}
+section#cemeterylist .swiper-container{
+  height:100%;
+}
+section#cemeterylist .swiper-slide {
+  display: block;
+  text-align: center;
+}
+section#cemeterylist .swiper-slide img{
+  display: block;
+  width:250px;
+  height:200px;
+  margin:0 auto;
+  object-fit: cover;
+}
+section#cemeterylist .swiper-slide h1{
+  font-size:16px;
+  font-weight:normal;
+}
+
+/* ビューポート下部に固定 */
+section#contact{
+  display:flex;
+  justify-content: space-between;
+  width:100vw;
+  line-height:80px;
+  position:fixed;
+  bottom:0px;
+  z-index:2;
+  background-color:rgb(250,250,250);
+  box-shadow: 0 0 8px rgba(5,5,5,.5);
+  text-align:center;
+}
+section#contact .tel{
+  display: block;
+  width:600px;
+  line-height:60px;
+  font-size:40px;
+  letter-spacing: 6px;;
+}
+section#contact .tel span.number{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section#contact .tel span.time{
+  display: block;
+  line-height:14px;
+  font-size:14px;
+  letter-spacing: 0.6px;
+}
+section#contact .tel span.number img{
+  width:auto;
+  height:40px;
+  padding-left:10px;
+}
+section#contact .tour,
+section#contact .document{
+  width:calc((100% - 400px) / 2);
+  color:rgb(250,250,250);
+  font-size:20px;
+  font-weight:bold;
+  letter-spacing: 4px;
+  padding-left:4px;
+}
+section#contact .tour{
+  background-color:rgb(41,91,91);
+}
+section#contact .document{
+  background-color:rgb(34,142,142);
+}
+
+/* フッター */
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  width:100vw;
+  background:rgb(5,5,5);
+  color:rgb(250,250,250);
 }
