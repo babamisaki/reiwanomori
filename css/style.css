@@ -11,6 +11,10 @@ a{
 }
 h1{
   clear: both;
+  font-family: "FOT-テロップ明朝 Pro B";
+}
+h2{
+  font-family: "FOT-テロップ明朝 Pro D";
 }
 p{
   text-align: justify;
