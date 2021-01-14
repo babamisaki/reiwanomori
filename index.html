@@ -91,7 +91,7 @@
       </article>
       <h2>都心の寺院に、和とモダンが融合した新しい時代の室内墓が誕生しました。</h2>
       <article>
-        <img src="img/article-dounaibyou.jpg" width="400" height="300" alt="迦楼塔 東京">
+        <img src="img/article-dounaibyou.jpg" width="400" height="300" alt="堂内廟">
         <div>
           <p>伝統的でありながらスタイリッシュさを兼ね備えたデザインは、厳かな本堂の空間に美しく映え、お参りする人を優しく迎え入れてくれます。現代のスタイルに融和した新しい供養のかたちです。最寄りの駅から徒歩約3分と便利な立地です。室内なので天候を気にせずお参りしていただくことができます。</p>
           <a href="" class="tag near">駅ちか</a>
@@ -171,11 +171,11 @@
             <h1>西湘 令和の杜（禅龍寺）</h1>
           </a>
           <a href="" class="swiper-slide">
-            <img src="img/article-karohto.jpg" width="400" height="300" alt="迦楼塔東京">
+            <img src="img/article-dounaibyou.jpg" width="400" height="300" alt="迦楼塔東京">
             <h1>市ヶ谷 坂の上 堂内廟（長泰寺）</h1>
           </a>
           <a href="" class="swiper-slide">
-            <img src="img/article-dounaibyou.jpg" width="400" height="300" alt="市ヶ谷坂の上堂内廟">
+            <img src="img/article-karohto.jpg" width="400" height="300" alt="市ヶ谷坂の上堂内廟">
             <h1>納骨堂 迦楼塔 東京（弘法寺）</h1>
           </a>
         </div>
@@ -195,33 +195,33 @@
     </section>
 
   <footer>
-    <ul>
-      <li>トップページ</li>
-      <li>令和の杜とは</li>
-      <li>墓地一覧</li>
-      <li>FAQ</li>
-      <li>お問合せ・資料請求</li>
-      <li>見学予約</li>
-      <li>海洋散骨</li>
-      <li>お墓適性診断</li>
-      <li>お墓選びのポイント</li>
+    <ul class="sitemap">
+      <li><a href="">トップページ</a></li>
+      <li><a href="">令和の杜とは</a></li>
+      <li><a href="">墓地一覧</a></li>
+      <li><a href="">FAQ</a></li>
+      <li><a href="">お問合せ・資料請求</a></li>
+      <li><a href="">見学予約</a></li>
+      <li><a href="">海洋散骨</a></li>
+      <li><a href="">お墓適性診断</a></li>
+      <li><a href="">お墓選びのポイント</a></li>
     </ul>
     <ul class="cemetery">
-      <li>樹木墓地
+      <li><a href="">樹木墓地</a>
         <ul>
-          <li>横浜令和の杜</li>
-          <li>新座令和の杜</li>
-          <li>大多喜令和の杜</li>
-          <li>西湘令和の杜</li>
+          <li><a href="">横浜令和の杜</a></li>
+          <li><a href="">新座令和の杜</a></li>
+          <li><a href="">大多喜令和の杜</a></li>
+          <li><a href="">西湘令和の杜</a></li>
         </ul>
       </li>
-      <li>屋内墓地
+      <li><a href="">屋内墓地</a>
         <ul>
-          <li>市ヶ谷&nbsp;堂内廟</li>
-          <li>迦楼塔&nbsp;東京</li>
+          <li><a href="">市ヶ谷&nbsp;堂内廟</a></li>
+          <li><a href="">迦楼塔&nbsp;東京</a></li>
         </ul>
       </li>
-      <li>納骨墓</li>
+      <li><a href="">納骨墓</a></li>
     </ul>
     <small>&copy;Copyright sai-products All Rights Reserved.</small>
   </footer>
@@ -244,8 +244,6 @@
         el: '.swiper-pagination',
         clickable: true,
       },
-      mousewheel: true,
-      keyboard: true,
       loop: true,
       speed: 4000,
       autoplay: {
@@ -272,11 +270,11 @@
     var map = $('iframe');
     //あらかじめiframeにpointer-events:noneを掛け、マウスイベントを無効にしておく
     map.css('pointer-events', 'none');
-    //一度クリックされたらマウスイベントを有効にする 
+    //一度クリックされたらマウスイベントを有効にする
     $('#map').click(function() {
       map.css('pointer-events', 'auto');
     });
-    //iframeからマウスが離れたら再度pointer-events:noneを効かせる 
+    //iframeからマウスが離れたら再度pointer-events:noneを効かせる
     map.mouseout(function() {
       map.css('pointer-events', 'none');
     });
