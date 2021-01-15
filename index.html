@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>令和の杜 | 樹に包まれて眠る、新しいお墓のカタチ</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
@@ -17,7 +17,7 @@
 <body>
   <header>
     <img src="img/logo.gif" width="400" height="85" alt="令和の杜">
-    <nav>
+    <nav class="pc">
       <ul>
         <li><a href="">令和の杜とは</a></li>
         <li><a href="">墓地一覧</a></li>
@@ -25,6 +25,25 @@
         <li><a href="">お問合せ</a></li>
       </ul>
     </nav>
+    <div id="nav-drawer" class="sp">
+      <input id="nav-input" type="checkbox" class="nav-unshown">
+      <label id="nav-open" for="nav-input"><span></span></label>
+      <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+      <div id="nav-content">
+        <ul>
+          <li><a href="">令和の杜とは</a></li>
+          <li><a href="">墓地一覧</a></li>
+          <li><a href="">ＦＡＱ</a></li>
+          <li class="contact">
+            <ul>
+              <li><a href="" class="tel">0120-148-324</a></li>
+              <li><a href="" class="tour">見学予約</a></li>
+              <li><a href="" class="document">資料請求</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
   </header>
 
   <main>
@@ -130,7 +149,8 @@
 
     <!-- マップ -->
     <section id="map">
-      <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1bhZAmcZnYmjONGHo2XUPovx3-zJpZevL"></iframe>
+      <iframe class="pc" src="https://www.google.com/maps/d/u/2/embed?mid=1bhZAmcZnYmjONGHo2XUPovx3-zJpZevL" width="640" height="480"></iframe>
+      <iframe class="sp" src="https://www.google.com/maps/d/u/2/embed?mid=1bhZAmcZnYmjONGHo2XUPovx3-zJpZevL&z=8" width="640" height="480"></iframe>
       <ul>
         <li><span>樹木葬墓地 横浜 令和の杜（常照寺）</span>〒232-0006&nbsp;神奈川県横浜市南区南太田1丁目24-41</li>
         <li><span>新座令和の杜</span>〒352-0016&nbsp;埼玉県新座市馬場1丁目9-3</li>
@@ -146,13 +166,47 @@
       <a href="">
         <h1>海洋散骨</h1>
         <div>詳細はこちら&nbsp;▶</div>
-        <p>ご遺族様のお気持ちに寄り添い「おもいやり」を込めた<br>セレモニーで故人様をお見送りいたします。</p>
+        <p>ご遺族様のお気持ちに寄り添い「おもいやり」を込めた<br class="pc">セレモニーで故人様をお見送りいたします。</p>
       </a>
     </section>
 
     <!-- 墓地一覧スライド -->
-    <section id="cemeterylist">
-      <div class="swiper-container">
+    <section id="cemeterylist" class="pc">
+      <div class="swiper-container-1">
+        <div class="swiper-wrapper">
+          <a href="" class="swiper-slide">
+            <img src="img/article-yokohama.jpg" width="400" height="300" alt="横浜令和の杜">
+            <h1>横浜 令和の杜（常照寺）</h1>
+          </a>
+          <a href="" class="swiper-slide">
+            <img src="img/article-niiza.jpg" width="400" height="300" alt="新座令和の杜">
+            <h1>新座 令和の杜（蓮光寺）</h1>
+          </a>
+          <a href="" class="swiper-slide">
+            <img src="img/article-otaki.jpg" width="400" height="300" alt="大多喜令和の杜">
+            <h1>大多喜 令和の杜（妙厳寺）</h1>
+          </a>
+          <a href="" class="swiper-slide">
+            <img src="img/article-seisho.jpg" width="400" height="300" alt="西湘令和の杜">
+            <h1>西湘 令和の杜（禅龍寺）</h1>
+          </a>
+          <a href="" class="swiper-slide">
+            <img src="img/article-dounaibyou.jpg" width="400" height="300" alt="迦楼塔東京">
+            <h1>市ヶ谷 坂の上 堂内廟（長泰寺）</h1>
+          </a>
+          <a href="" class="swiper-slide">
+            <img src="img/article-karohto.jpg" width="400" height="300" alt="市ヶ谷坂の上堂内廟">
+            <h1>納骨堂 迦楼塔 東京（弘法寺）</h1>
+          </a>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- 墓地一覧スライド -->
+    <section id="cemeterylist" class="sp">
+      <div class="swiper-container-2">
         <div class="swiper-wrapper">
           <a href="" class="swiper-slide">
             <img src="img/article-yokohama.jpg" width="400" height="300" alt="横浜令和の杜">
@@ -185,7 +239,7 @@
     </section>
 
     <!-- ビューポート下部に固定 -->
-    <section id="contact">
+    <section id="contact" class="pc">
       <a href="" class="tel">
         <span class="number"><img src="img/btn-tel.png" width="180" height="110">&nbsp;0120-148324</span>
         <span class="time">【参拝受付】10時〜19時・年中無休【販売営業時間】10時〜18時</span>
@@ -238,20 +292,38 @@
 <!-- 墓地一覧スライドjs -->
 <script src="js/swiper-bundle.min.js"></script>
 <script>
-  var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 4,
-    spaceBetween: 24,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    loop: true,
-    speed: 4000,
-    autoplay: {
-      delay: 500,
-      disableOnInteraction: true,
-    },
-  });
+  {
+    var swiper = new Swiper('.swiper-container-1', {
+      slidesPerView: 4,
+      spaceBetween: 24,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      loop: true,
+      speed: 4000,
+      autoplay: {
+        delay: 500,
+        disableOnInteraction: true,
+      },
+    });
+  }
+  {
+    var swiper = new Swiper('.swiper-container-2', {
+      slidesPerView: 2,
+      spaceBetween: 24,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      loop: true,
+      speed: 4000,
+      autoplay: {
+        delay: 500,
+        disableOnInteraction: true,
+      },
+    });
+  }
 </script>
 
 <!-- 以下jQuery -->
