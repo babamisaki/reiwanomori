@@ -1,50 +1,4 @@
-<!doctype html>
-<html class="no-js" lang="ja">
-
-<head>
-  <meta charset="utf-8">
-  <title>令和の杜 | 樹に包まれて眠る、新しいお墓のカタチ</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/swiper-bundle.min.css">
-
-  <meta name="theme-color" content="#fafafa">
-</head>
-
-<body>
-  <header>
-    <img src="img/logo.gif" width="400" height="85" alt="令和の杜">
-    <nav class="pc">
-      <ul>
-        <li><a href="">令和の杜とは</a></li>
-        <li><a href="">墓地一覧</a></li>
-        <li><a href="">ＦＡＱ</a></li>
-        <li><a href="">お問合せ</a></li>
-      </ul>
-    </nav>
-    <div id="nav-drawer" class="sp">
-      <input id="nav-input" type="checkbox" class="nav-unshown">
-      <label id="nav-open" for="nav-input"><span></span></label>
-      <label class="nav-unshown" id="nav-close" for="nav-input"></label>
-      <div id="nav-content">
-        <ul>
-          <li><a href="">令和の杜とは</a></li>
-          <li><a href="">墓地一覧</a></li>
-          <li><a href="">ＦＡＱ</a></li>
-          <li class="contact">
-            <ul>
-              <li><a href="" class="tel">0120-148-324</a></li>
-              <li><a href="" class="tour">見学予約</a></li>
-              <li><a href="" class="document">資料請求</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </header>
+<?php get_header(); ?>
 
   <main>
     <!-- MainVisual -->
@@ -100,7 +54,7 @@
       <h1>特集・おすすめ情報</h1>
       <h2>横浜みなとみらいを一望できる開放感にあふれた「樹木墓地&nbsp;令和の杜」</h2>
       <article>
-        <img src="img/article-yokohama.jpg" width="400" height="300" alt="横浜令和の杜">
+        <img src="https://media-lab.tokyo/reiwanomori/img/article-yokohama.jpg" width="400" height="300" alt="横浜令和の杜">
         <div>
           <p>京浜急行「南太田駅」徒歩約５分。山門を入り緑豊かな木々の中の階段を一段一段上っていくと静けさと歴史を感じられる本堂が目の前にあらわれます。豊かな自然と優しい陽射しに包まれて眠りたい。そんな願いをかなえてくれるお墓です。最寄りの駅から徒歩5分と交通の便もよく、駐車場も完備されていますのでお気軽にお参りして頂くことができます。</p>
           <a href="" class="tag near">駅ちか</a>
@@ -110,7 +64,7 @@
       </article>
       <h2>都心の寺院に、和とモダンが融合した新しい時代の室内墓が誕生しました。</h2>
       <article>
-        <img src="img/article-dounaibyou.jpg" width="400" height="300" alt="堂内廟">
+        <img src="https://media-lab.tokyo/reiwanomori/img/article-dounaibyou.jpg" width="400" height="300" alt="堂内廟">
         <div>
           <p>伝統的でありながらスタイリッシュさを兼ね備えたデザインは、厳かな本堂の空間に美しく映え、お参りする人を優しく迎え入れてくれます。現代のスタイルに融和した新しい供養のかたちです。最寄りの駅から徒歩約3分と便利な立地です。室内なので天候を気にせずお参りしていただくことができます。</p>
           <a href="" class="tag near">駅ちか</a>
@@ -125,7 +79,7 @@
     <section id="choose">
       <h1>お墓を選ぶにあたって</h1>
       <article>
-        <img src="img/choose-point.gif" width="400" height="400" alt="ポイントで選ぶ">
+        <img src="https://media-lab.tokyo/reiwanomori/img/choose-point.gif" width="400" height="400" alt="ポイントで選ぶ">
         <div>
           <h2>失敗しないための<br>5つのポイントをご紹介します。</h2>
           <ol>
@@ -139,7 +93,7 @@
         </div>
       </article>
       <article>
-        <img src="img/choose-diagnosis.gif" width="400" height="400" alt="適性で選ぶ">
+        <img src="https://media-lab.tokyo/reiwanomori/img/choose-diagnosis.gif" width="400" height="400" alt="適性で選ぶ">
         <div>
           <h2>「はい」「いいえ」の簡単な質問に答えるだけで<br>あなたに合ったお墓を診断いたします。</h2>
           <a href="" class="diagnosis-start">無料診断スタート&nbsp;▶</a>
@@ -175,27 +129,27 @@
       <div class="swiper-container-1">
         <div class="swiper-wrapper">
           <a href="" class="swiper-slide">
-            <img src="img/article-yokohama.jpg" width="400" height="300" alt="横浜令和の杜">
+            <img src="https://media-lab.tokyo/reiwanomori/img/article-yokohama.jpg" width="400" height="300" alt="横浜令和の杜">
             <h1>横浜 令和の杜（常照寺）</h1>
           </a>
           <a href="" class="swiper-slide">
-            <img src="img/article-niiza.jpg" width="400" height="300" alt="新座令和の杜">
+            <img src="https://media-lab.tokyo/reiwanomori/img/article-niiza.jpg" width="400" height="300" alt="新座令和の杜">
             <h1>新座 令和の杜（蓮光寺）</h1>
           </a>
           <a href="" class="swiper-slide">
-            <img src="img/article-otaki.jpg" width="400" height="300" alt="大多喜令和の杜">
+            <img src="https://media-lab.tokyo/reiwanomori/img/article-otaki.jpg" width="400" height="300" alt="大多喜令和の杜">
             <h1>大多喜 令和の杜（妙厳寺）</h1>
           </a>
           <a href="" class="swiper-slide">
-            <img src="img/article-seisho.jpg" width="400" height="300" alt="西湘令和の杜">
+            <img src="https://media-lab.tokyo/reiwanomori/img/article-seisho.jpg" width="400" height="300" alt="西湘令和の杜">
             <h1>西湘 令和の杜（禅龍寺）</h1>
           </a>
           <a href="" class="swiper-slide">
-            <img src="img/article-dounaibyou.jpg" width="400" height="300" alt="迦楼塔東京">
+            <img src="https://media-lab.tokyo/reiwanomori/img/article-dounaibyou.jpg" width="400" height="300" alt="迦楼塔東京">
             <h1>市ヶ谷 坂の上 堂内廟（長泰寺）</h1>
           </a>
           <a href="" class="swiper-slide">
-            <img src="img/article-karohto.jpg" width="400" height="300" alt="市ヶ谷坂の上堂内廟">
+            <img src="https://media-lab.tokyo/reiwanomori/img/article-karohto.jpg" width="400" height="300" alt="市ヶ谷坂の上堂内廟">
             <h1>納骨堂 迦楼塔 東京（弘法寺）</h1>
           </a>
         </div>
@@ -209,27 +163,27 @@
       <div class="swiper-container-2">
         <div class="swiper-wrapper">
           <a href="" class="swiper-slide">
-            <img src="img/article-yokohama.jpg" width="400" height="300" alt="横浜令和の杜">
+            <img src="https://media-lab.tokyo/reiwanomori/img/article-yokohama.jpg" width="400" height="300" alt="横浜令和の杜">
             <h1>横浜 令和の杜（常照寺）</h1>
           </a>
           <a href="" class="swiper-slide">
-            <img src="img/article-niiza.jpg" width="400" height="300" alt="新座令和の杜">
+            <img src="https://media-lab.tokyo/reiwanomori/img/article-niiza.jpg" width="400" height="300" alt="新座令和の杜">
             <h1>新座 令和の杜（蓮光寺）</h1>
           </a>
           <a href="" class="swiper-slide">
-            <img src="img/article-otaki.jpg" width="400" height="300" alt="大多喜令和の杜">
+            <img src="https://media-lab.tokyo/reiwanomori/img/article-otaki.jpg" width="400" height="300" alt="大多喜令和の杜">
             <h1>大多喜 令和の杜（妙厳寺）</h1>
           </a>
           <a href="" class="swiper-slide">
-            <img src="img/article-seisho.jpg" width="400" height="300" alt="西湘令和の杜">
+            <img src="https://media-lab.tokyo/reiwanomori/img/article-seisho.jpg" width="400" height="300" alt="西湘令和の杜">
             <h1>西湘 令和の杜（禅龍寺）</h1>
           </a>
           <a href="" class="swiper-slide">
-            <img src="img/article-dounaibyou.jpg" width="400" height="300" alt="迦楼塔東京">
+            <img src="https://media-lab.tokyo/reiwanomori/img/article-dounaibyou.jpg" width="400" height="300" alt="迦楼塔東京">
             <h1>市ヶ谷 坂の上 堂内廟（長泰寺）</h1>
           </a>
           <a href="" class="swiper-slide">
-            <img src="img/article-karohto.jpg" width="400" height="300" alt="市ヶ谷坂の上堂内廟">
+            <img src="https://media-lab.tokyo/reiwanomori/img/article-karohto.jpg" width="400" height="300" alt="市ヶ谷坂の上堂内廟">
             <h1>納骨堂 迦楼塔 東京（弘法寺）</h1>
           </a>
         </div>
@@ -241,119 +195,11 @@
     <!-- ビューポート下部に固定 -->
     <section id="contact" class="pc">
       <a href="" class="tel">
-        <span class="number"><img src="img/btn-tel.png" width="180" height="110">&nbsp;0120-148324</span>
+        <span class="number"><img src="https://media-lab.tokyo/reiwanomori/img/btn-tel.png" width="180" height="110">&nbsp;0120-148324</span>
         <span class="time">【参拝受付】10時〜19時・年中無休【販売営業時間】10時〜18時</span>
       </a>
       <a href="" class="tour">見学予約</a>
       <a href="" class="document">資料請求</a>
     </section>
 
-  <footer>
-    <ul class="sitemap">
-      <li><a href="">トップページ</a></li>
-      <li><a href="">令和の杜とは</a></li>
-      <li><a href="">墓地一覧</a></li>
-      <li><a href="">FAQ</a></li>
-      <li><a href="">お問合せ・資料請求</a></li>
-      <li><a href="">見学予約</a></li>
-      <li><a href="">海洋散骨</a></li>
-      <li><a href="">お墓適性診断</a></li>
-      <li><a href="">お墓選びのポイント</a></li>
-    </ul>
-    <ul class="cemetery">
-      <li><a href="">樹木墓地</a>
-        <ul>
-          <li><a href="">横浜令和の杜</a></li>
-          <li><a href="">新座令和の杜</a></li>
-          <li><a href="">大多喜令和の杜</a></li>
-          <li><a href="">西湘令和の杜</a></li>
-        </ul>
-      </li>
-      <li><a href="">屋内墓地</a>
-        <ul>
-          <li><a href="">市ヶ谷&nbsp;堂内廟</a></li>
-          <li><a href="">迦楼塔&nbsp;東京</a></li>
-        </ul>
-      </li>
-      <li><a href="">納骨墓</a></li>
-    </ul>
-    <small>&copy;Copyright sai-products All Rights Reserved.</small>
-  </footer>
-</main>
-
-
-<script src="js/vendor/modernizr-3.11.2.min.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
-
-<!-- fontplus -->
-<script src="//webfont.fontplus.jp/accessor/script/fontplus.js?nxDAASNW5A8%3D&box=VuFeZrcrpps%3D&aa=1&ab=2"></script>
-
-<!-- 墓地一覧スライドjs -->
-<script src="js/swiper-bundle.min.js"></script>
-<script>
-  {
-    var swiper = new Swiper('.swiper-container-1', {
-      slidesPerView: 4,
-      spaceBetween: 24,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      loop: true,
-      speed: 4000,
-      autoplay: {
-        delay: 500,
-        disableOnInteraction: true,
-      },
-    });
-  }
-  {
-    var swiper = new Swiper('.swiper-container-2', {
-      slidesPerView: 2,
-      spaceBetween: 24,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      loop: true,
-      speed: 4000,
-      autoplay: {
-        delay: 500,
-        disableOnInteraction: true,
-      },
-    });
-  }
-</script>
-
-<!-- 以下jQuery -->
-<script src="js/jquery-3.5.1.min.js"></script>
-
-<!-- メインビジュアル背景スライドjs -->
-<script src="js/jquery.bgswitcher.js"></script>
-<script>
-  $(".bg-slider").bgswitcher({
-    images: ["img/slide-bg-01.jpg", "img/slide-bg-02.jpg"],
-  });
-</script>
-
-<!-- googlemapスクロール無効js -->
-<script>
-  $(function() {
-  var map = $('iframe');
-  //あらかじめiframeにpointer-events:noneを掛け、マウスイベントを無効にしておく
-  map.css('pointer-events', 'none');
-  //一度クリックされたらマウスイベントを有効にする
-  $('#map').click(function() {
-    map.css('pointer-events', 'auto');
-  });
-  //iframeからマウスが離れたら再度pointer-events:noneを効かせる
-  map.mouseout(function() {
-    map.css('pointer-events', 'none');
-  });
-})
-</script>
-
-</body>
-
-</html>
+<?php get_footer(); ?>

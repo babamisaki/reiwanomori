@@ -1,3 +1,6 @@
+/*
+Theme Name : 令和の杜
+*/
 a{
   color:rgb(5,5,5);
   text-decoration: none;
@@ -269,13 +272,13 @@ section#select-cemetery .cemetery:hover{
   }
 }
 section#select-cemetery .cemetery.tree{
-  background-image:url(../img/cemetery-tree.jpg);
+  background-image:url(https://media-lab.tokyo/reiwanomori/img/cemetery-tree.jpg);
 }
 section#select-cemetery .cemetery.indoor{
-  background-image:url(../img/cemetery-indoor.jpg);
+  background-image:url(https://media-lab.tokyo/reiwanomori/img/cemetery-indoor.jpg);
 }
 section#select-cemetery .cemetery.ossuary{
-  background-image:url(../img/cemetery-ossuary.jpg);
+  background-image:url(https://media-lab.tokyo/reiwanomori/img/cemetery-ossuary.jpg);
 }
 section#select-cemetery .cemetery div{
   display: flex;
@@ -391,7 +394,7 @@ section#recommend article .tag.indoor{
 }
 section#recommend article .detail{
   padding: 0px 48px 8px 0;
-  background:url(../img/btn-bg-01.png) no-repeat 100% 100%;
+  background:url(https://media-lab.tokyo/reiwanomori/img/btn-bg-01.png) no-repeat 100% 100%;
   color:rgb(112,112,112);
   letter-spacing: 2px;
   position:absolute;
@@ -413,7 +416,7 @@ section#recommend article .detail:hover{
   filter: drop-shadow(0 0 3px rgba(5,5,5,.2));
 }
 section#recommend>a{
-  background-image:url(../img/btn-bg-02.png);
+  background-image:url(https://media-lab.tokyo/reiwanomori/img/btn-bg-02.png);
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: center;
@@ -487,7 +490,7 @@ section#choose article div ol li{
 }
 section#choose article .detail{
   padding: 0px 48px 8px 0;
-  background:url(../img/btn-bg-01.png) no-repeat 100% 100%;
+  background:url(https://media-lab.tokyo/reiwanomori/img/btn-bg-01.png) no-repeat 100% 100%;
   color:rgb(112,112,112);
   letter-spacing: 2px;
   position: absolute;
@@ -586,7 +589,7 @@ section#sea a{
   width:100vw;
   height:300px;
   padding:40px 0;
-  background-image:url(../img/banner-bg-sea.jpg);
+  background-image:url(https://media-lab.tokyo/reiwanomori/img/banner-bg-sea.jpg);
   background-size:100% auto;
   background-position:center;
   color:rgb(250,250,250);
@@ -775,21 +778,23 @@ footer ul li a{
 footer ul.sitemap{
   display: flex;
   flex-wrap: wrap;
+  justify-content: left;
   width:47%;
   padding-left:40px;
+}
+footer ul.sitemap li{
+  width:calc(100% / 4);
 }
 @media screen and (max-width: 700px) {
   footer ul.sitemap{
     width:100%;
     padding:0 16px;
-    justify-content: left;
   }
   footer ul.sitemap li{
-    width:calc(100% / 4);
     line-height:32px;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   footer ul.sitemap li{
     width:calc(100% / 2);
   }
