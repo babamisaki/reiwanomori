@@ -1,6 +1,10 @@
-/*
+/***********
 Theme Name : 令和の杜
-*/
+***********/
+
+/***********
+トップページ
+***********/
 a{
   color:rgb(5,5,5);
   text-decoration: none;
@@ -159,7 +163,7 @@ header nav.pc ul li{
   }
 }
 
-main{
+main.top{
   margin-bottom:80px;
 }
 @media screen and (max-width: 1000px) {
@@ -765,6 +769,9 @@ footer{
   width:100vw;
   background:rgb(5,5,5);
 }
+footer.top{
+  margin-bottom:80px;
+}
 footer ul{
   padding-inline-start:0;
 }
@@ -827,4 +834,240 @@ footer small{
   padding:24px 0;
   text-align:center;
   color:rgb(250,250,250);
+}
+
+/***********
+固定ページ
+***********/
+main.page{
+  display: flex;
+  margin-top:80px;
+  width:100%;
+}
+/* サイドバーPC */
+aside div.pc{
+  width:350px;
+  background-color:rgb(240,240,240);
+  height: 100%;
+}
+aside div.pc #acMenu{
+  color:rgb(250,250,250);
+  margin:0;
+}
+aside div.pc #acMenu dt{
+  display:block;
+  box-sizing: border-box;
+  width:350px;
+  height:64px;
+  line-height:64px;
+  padding:0 24px;;
+  background:rgb(34,142,142);
+  border-bottom:solid 1px rgb(250,250,250);
+  cursor:pointer;
+  box-shadow: 0px 6px 5px -2px rgba(5,5,5,0.3);
+  position: relative;
+}
+aside div.pc #acMenu dd{
+  display:none;
+  width:350px;
+  height:auto;
+  line-height:16px;
+  margin: 0;
+  padding:24px;
+  background:rgb(13,111,111);
+  box-sizing: border-box;
+}
+aside div.pc #acMenu dd ul{
+  padding-inline-start: 0;
+}
+aside div.pc #acMenu dd ul li:first-of-type,
+aside div.pc #acMenu dd ul li:last-of-type{
+  margin:0;
+}
+aside div.pc #acMenu dd ul li:nth-child(n+2):nth-last-child(n+2){
+  margin:16px 0;
+}
+aside div.pc #acMenu dd ul li{
+  list-style:none;
+  border-left:solid 2px rgb(250,250,250);
+  box-sizing: border-box;
+}
+aside div.pc #acMenu dd ul li a{
+  color:rgb(250,250,250);
+  padding-left: 16px;
+}
+aside div.pc dl#acMenu>a{
+  display:block;
+  box-sizing: border-box;
+  width:350px;
+  height:64px;
+  line-height:64px;
+  padding:0 24px;;
+  background:rgb(34,142,142);
+  border-bottom:solid 1px rgb(250,250,250);
+  cursor:pointer;
+  box-shadow: 0px 6px 5px -2px rgba(5,5,5,0.3);
+  position: relative;
+  color:rgb(250,250,250);
+}
+aside div.pc a.contact{
+  display: block;
+  width:300px;
+  height:80px;
+  line-height:80px;
+  margin:24px auto;
+  border-radius:16px;
+  color:rgb(250,250,250);
+  text-align:center;
+  font-size:20px;
+  letter-spacing: 2px;
+  padding-left:2px;
+}
+aside div.pc a.contact.tour{
+  background:linear-gradient(rgb(28,150,150), rgb(0,92,92));
+}
+aside div.pc a.contact.document{
+  background:linear-gradient(rgb(255,194,77), rgb(255,129,3));
+}
+aside div.pc a.tel{
+  display: block;
+  width:300px;
+  margin:0 auto;
+  background-color:rgb(250,250,250);
+  padding:24px 0;
+}
+aside div.pc a.tel p{
+  font-size:20px;
+}
+aside div.pc a.tel p,
+aside div.pc a.tel span{
+  text-align:center;
+  margin:0;
+  padding:0;
+}
+aside div.pc a.tel span{
+  display:block;
+  width:100%;
+  line-height:80px;
+  font-size:32px;
+}
+div.main{
+  width:calc(100% - 350px);
+  margin:0;
+  padding:0;
+}
+div.main #mainvisu{
+  width:100%;
+  height:auto;
+  margin:0;
+  padding:100px 0;
+  background-image:url(https://media-lab.tokyo/reiwanomori/img/page-tree.jpg);
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  box-sizing: border-box;
+}
+div.main #mainvisu p,
+div.main #mainvisu h1{
+  background-color:rgba(5,5,5,.6);
+  color:rgb(250,250,250);
+  text-align:center;
+  margin:0;
+  padding:0;
+}
+div.main #mainvisu p{
+  line-height:50px;
+}
+div.main #mainvisu h1{
+  line-height:150px;
+  font-size:64px;
+  letter-spacing: 8px;
+  padding-left:8px;
+}
+div.main section#what{
+  padding:40px;
+  box-sizing: border-box;
+  background-image:url(https://media-lab.tokyo/reiwanomori/img/page-tree-bg.png);
+  background-repeat: no-repeat;
+  background-size:100% auto;
+}
+div.main section#what h1,
+div.main section#what p{
+  width:100%;
+  text-align:center;
+  line-height:40px;
+}
+div.main section#feature{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding:40px;
+  box-sizing: border-box;
+}
+div.main section#feature h1{
+  width:100%;
+  text-align:center;
+}
+div.main section#feature .feature-con{
+  width:calc(100% / 3.2);
+}
+div.main section#feature .feature-con h2{
+  text-align:center;
+}
+div.main section#feature .feature-con *{
+  width:100%;
+}
+div.main section#list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+div.main section#list a.list-con{
+  display: block;
+  width:calc(100% / 2.2);
+  margin:24px 0;
+  box-shadow: 0px 0px 10px rgba(5,5,5,0.5);
+  cursor: pointer;
+  position:relative;
+  padding-bottom:24px;
+}
+div.main section#list a.list-con:hover{
+  box-shadow: 0px 0px 10px rgba(5,5,5,0.8);
+}
+div.main section#list a.list-con *{
+  width:100%;
+}
+div.main section#list a.list-con h1{
+  margin:0;
+  padding:8px;
+  box-sizing:border-box;
+  line-height:32px;
+  font-size:24px;
+  background:linear-gradient(to right, rgb(0,80,80), rgb(34,147,147));
+  color:rgb(250,250,250);
+}
+div.main section#list a.list-con img{
+  height:200px;
+  object-fit: cover;
+}
+div.main section#list a.list-con h2{
+  color:rgb(167,0,0);
+  font-weight:bold;
+  padding:16px 16px 0 16px;
+  box-sizing: border-box;
+  font-size:20px;
+}
+div.main section#list a.list-con p{
+  padding:0 16px 16px 16px;
+  box-sizing:border-box;
+}
+div.main section#list a.list-con span.detail{
+  background: url(https://media-lab.tokyo/reiwanomori/img/btn-bg-01.png) no-repeat 100% 100%;
+  color: rgb(112,112,112);
+  letter-spacing: 2px;
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+  width: 30%;
+  padding: 2px;
 }
