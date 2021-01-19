@@ -281,7 +281,7 @@ section#select-cemetery .cemetery.tree{
 section#select-cemetery .cemetery.indoor{
   background-image:url(https://media-lab.tokyo/reiwanomori/img/cemetery-indoor.jpg);
 }
-section#select-cemetery .cemetery.ossuary{
+section#select-cemetery .cemetery.pet{
   background-image:url(https://media-lab.tokyo/reiwanomori/img/cemetery-ossuary.jpg);
 }
 section#select-cemetery .cemetery div{
@@ -903,7 +903,7 @@ aside div.pc dl#acMenu>a{
   height:64px;
   line-height:64px;
   padding:0 24px;;
-  background:rgb(34,142,142);
+  background-color:rgb(34,142,142);
   border-bottom:solid 1px rgb(250,250,250);
   cursor:pointer;
   box-shadow: 0px 6px 5px -2px rgba(5,5,5,0.3);
@@ -951,10 +951,147 @@ aside div.pc a.tel span{
   line-height:80px;
   font-size:32px;
 }
+/* サイドバーSP */
+@media screen and (max-width: 1000px) {
+  #nav-drawer-side {
+    position: relative;
+  }
+  .nav-unshown-side {
+    display:none;
+  }
+  #nav-open-side {
+    display: inline-block;
+    width: 30px;
+    height: 100%;
+  }
+  #nav-open-side span, #nav-open-side span:before,
+  #nav-open-side span:after {
+    position: fixed;
+    height: auto;
+    width: 30px;
+    display: block;
+    content: url(https://media-lab.tokyo/reiwanomori/img/sp-side.png);
+    cursor: pointer;
+  }
+  #nav-open-side span:before {
+    bottom: -8px;
+  }
+  #nav-open-side span:after {
+    bottom: -16px;
+  }
+  /*閉じる用の薄黒カバー*/
+  #nav-close-side {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0;
+    transition: .3s ease-in-out;
+  }
+  #nav-content-side {
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 90%;
+    max-width: 330px;
+    height: 100%;
+    background: #fff;
+    transition: .3s ease-in-out;
+    -webkit-transform: translateX(-105%);
+    transform: translateX(-105%);
+    margin-top:80px;
+  }
+  #nav-input-side:checked ~ #nav-close-side {
+    display: block;
+    opacity: .5;
+  }
+  #nav-input-side:checked ~ #nav-content-side {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    box-shadow: 6px 0 25px rgba(0,0,0,.15);
+    margin-top: 80px;
+  }
+  aside div.sp{
+    width: 30px;
+    background-color: rgb(34,142,142);
+    height: 100%;
+  }
+  aside div.sp #acMenu{
+    color:rgb(250,250,250);
+    margin:0;
+  }
+  aside div.sp #acMenu dt{
+    display:block;
+    box-sizing: border-box;
+    width:350px;
+    height:64px;
+    line-height:64px;
+    padding:0 24px;;
+    background:rgb(34,142,142);
+    border-bottom:solid 1px rgb(250,250,250);
+    cursor:pointer;
+    box-shadow: 0px 6px 5px -2px rgba(5,5,5,0.3);
+    position: relative;
+  }
+  aside div.sp #acMenu dd{
+    display:none;
+    height:auto;
+    line-height:16px;
+    margin: 0;
+    padding:24px;
+    background:rgb(13,111,111);
+    box-sizing: border-box;
+  }
+  aside div.sp #acMenu dd ul{
+    padding-inline-start: 0;
+  }
+  aside div.sp #acMenu dd ul li:first-of-type,
+  aside div.sp #acMenu dd ul li:last-of-type{
+    margin:0;
+  }
+  aside div.sp #acMenu dd ul li:nth-child(n+2):nth-last-child(n+2){
+    margin:16px 0;
+  }
+  aside div.sp #acMenu dd ul li{
+    list-style:none;
+    border-left:solid 2px rgb(250,250,250);
+    box-sizing: border-box;
+  }
+  aside div.sp #acMenu dd ul li a{
+    color:rgb(250,250,250);
+    padding-left: 16px;
+  }
+  aside div.sp dl#acMenu>a{
+    display:block;
+    box-sizing: border-box;
+    width:350px;
+    height:64px;
+    line-height:64px;
+    padding:0 24px;;
+    background:rgb(34,142,142);
+    border-bottom:solid 1px rgb(250,250,250);
+    cursor:pointer;
+    box-shadow: 0px 6px 5px -2px rgba(5,5,5,0.3);
+    position: relative;
+    color:rgb(250,250,250);
+  }
+}
+
 div.main{
   width:calc(100% - 350px);
   margin:0;
   padding:0;
+}
+@media screen and (max-width: 1000px) {
+  div.main{
+    width:calc(100% - 30px);
+  }
 }
 div.main #mainvisu{
   width:100%;
@@ -1004,12 +1141,27 @@ div.main section#feature{
   padding:40px;
   box-sizing: border-box;
 }
+@media screen and (max-width: 1000px) {
+  div.main section#feature{
+    padding:24px;
+  }
+}
 div.main section#feature h1{
   width:100%;
   text-align:center;
 }
 div.main section#feature .feature-con{
   width:calc(100% / 3.2);
+}
+@media screen and (max-width: 700px) {
+  div.main section#feature .feature-con{
+    width:calc(100% / 2.1);
+  }
+}
+@media screen and (max-width: 400px) {
+  div.main section#feature .feature-con{
+    width:100%;
+  }
 }
 div.main section#feature .feature-con h2{
   text-align:center;
@@ -1024,12 +1176,18 @@ div.main section#list{
 }
 div.main section#list a.list-con{
   display: block;
-  width:calc(100% / 2.2);
+  width:calc(100% / 2.1);
   margin:24px 0;
   box-shadow: 0px 0px 10px rgba(5,5,5,0.5);
   cursor: pointer;
   position:relative;
   padding-bottom:24px;
+}
+@media screen and (max-width: 1000px) {
+  div.main section#list a.list-con{
+    width:calc(100% - 48px);
+    margin:0 auto 24px auto;
+  }
 }
 div.main section#list a.list-con:hover{
   box-shadow: 0px 0px 10px rgba(5,5,5,0.8);
@@ -1068,6 +1226,9 @@ div.main section#list a.list-con span.detail{
   position: absolute;
   right: 4px;
   bottom: 4px;
-  width: 30%;
-  padding: 2px;
+  width: auto;
+  padding: 2px 24px 2px 2px;
+}
+div.main section#list a.list-con span.detail:hover{
+  filter: drop-shadow(0 0 3px rgba(5,5,5,.2));
 }
